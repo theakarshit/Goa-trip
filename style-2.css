@@ -1,71 +1,19 @@
 body {
-  background-color: #FDF6F2;
-  margin: 0;
-  font-family: Tahoma, sans-serif;
-  font-weight: 400;
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
 header {
-  width: 60%; /* Original width for desktop */
-  margin: 0 auto; /* Center align the header */
-  padding: 40px 0; /* Add padding above and below the header */
-  background-color: #FDF6F2; /* Ensure background color is consistent */
-  z-index: 1000; /* Ensure it stays on top of other content */
-  position: relative; /* Changed from sticky for better mobile support */
+    text-align: center;
 }
 
-.header-content {
-  display: flex;
-  align-items: center; /* Vertically align items */
-  justify-content: space-between; /* Distribute space between title and menu */
-  padding: 0 20px; /* Padding on the sides */
-}
-
-.retreat-title {
-  font-size: 20px;
-  font-family: Tahoma, sans-serif;
-  font-weight: 400;
-  color: #000; /* Adjust the color if needed */
-}
-
-.menu {
-  display: flex;
-  align-items: center; /* Vertically align menu items */
-  gap: 20px; /* Space between menu items */
-}
-
-.menu a {
-  font-size: 20px;
-  font-family: Tahoma, sans-serif;
-  font-weight: 400;
-  color: #000; /* Default text color */
-  text-decoration: none; /* Remove underline from links */
-  transition: color 0.3s; /* Smooth color transition on hover */
-}
-
-.menu a:hover {
-  color: #666; /* Slightly lighter color on hover */
-}
-
-.menu a.button {
-  background-color: #FFE43A;
-  color: #000; /* Text color inside the button */
-  padding: 10px 30px; /* Increase padding inside the button for more spacing */
-  border-radius: 20px; /* Rounded corners */
-  text-transform: uppercase; /* Capitalize text */
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center align text inside button */
-  font-size: 20px;
-  font-family: Tahoma, sans-serif;
-  font-weight: 400;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Drop shadow */
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition */
-}
-
-.menu a.button:hover {
-  background-color: #000; /* Button color on hover */
-  color: #FFF; /* Text color on hover */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker drop shadow on hover */
-  animation: jello 0.5s; /* Apply the jello animation */
+.headline {
+    font-size: 48px;
+    color: #333;
+    margin: 0;
 }
