@@ -1,0 +1,236 @@
+body {
+  background-color: #FDF6F2;
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+header {
+  width: 60%; /* Original width for desktop */
+  margin: 0 auto; /* Center align the header */
+  padding: 40px 0; /* Add padding above and below the header */
+  background-color: #FDF6F2; /* Ensure background color is consistent */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  position: relative; /* Changed from sticky for better mobile support */
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Distribute space between title and menu */
+  padding: 0 20px; /* Padding on the sides */
+}
+
+.retreat-title {
+  font-size: 20px;
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  color: #000; /* Adjust the color if needed */
+}
+
+.menu {
+  display: flex;
+  align-items: center; /* Vertically align menu items */
+  gap: 20px; /* Space between menu items */
+}
+
+.menu a {
+  font-size: 20px;
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  color: #000; /* Default text color */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.menu a:hover {
+  color: #666; /* Slightly lighter color on hover */
+}
+
+.menu a.button {
+  background-color: #FFE43A;
+  color: #000; /* Text color inside the button */
+  padding: 10px 30px; /* Increase padding inside the button for more spacing */
+  border-radius: 20px; /* Rounded corners */
+  text-transform: uppercase; /* Capitalize text */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align text inside button */
+  font-size: 20px;
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Drop shadow */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.menu a.button:hover {
+  background-color: #000; /* Button color on hover */
+  color: #FFF; /* Text color on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker drop shadow on hover */
+  animation: jello 0.5s; /* Apply the jello animation */
+}
+
+/* Keyframes for the jello animation */
+@keyframes jello {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.1) skewX(-10deg); }
+  50% { transform: scale(1) skewX(5deg); }
+  75% { transform: scale(1.1) skewX(-5deg); }
+  100% { transform: scale(1); }
+}
+
+.section-main-1 {
+  padding-bottom: 100px; /* Massive padding for bottom of the section */
+}
+
+.main-heading {
+  text-align: center; /* Center align the heading */
+  margin: 0 20px 10px; /* Margin: top 0, right 20px, bottom 10px, left 20px */
+  padding: 0; /* Remove padding */
+}
+
+.main-heading h1 {
+  font-size: 42px;
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  margin: 0; /* Remove default margin */
+}
+
+.highlight {
+  font-weight: bold; /* Make the text bold */
+  background-color: #FFE43A; /* Background color for the highlighted text */
+  padding: 5px 10px; /* Add some padding inside the highlighted area */
+  border-radius: 5px; /* Curved corners */
+  display: inline; /* Ensure the background color wraps only the text */
+}
+
+.subheadline {
+  text-align: center; /* Center align the subheadline */
+  margin: 20px 20px 10px; /* Margin: top 20px, right 20px, bottom 10px, left 20px */
+  padding: 0; /* Remove padding */
+}
+
+.subheadline p {
+  font-size: 18px;
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  margin: 0; /* Remove default margin */
+}
+
+.subheadline strong {
+  font-weight: 400; /* Ensure bold text is consistent */
+}
+
+.subheadline u {
+  text-decoration: underline; /* Underline the text */
+}
+
+.video-container {
+  width: 60vw; /* Responsive width */
+  height: 33.1vw; /* Responsive height based on the aspect ratio 940px by 526.4px */
+  max-width: 940px; /* Max width */
+  max-height: 526.4px; /* Max height */
+  margin: 20px auto; /* Top and bottom margin 20px, center align horizontally */
+  padding: 20px; /* Padding inside the container */
+  background-color: #FFE43A; /* Background color for the container */
+  border-radius: 20px; /* Rounded corners */
+  display: flex;
+  justify-content: center; /* Center align content horizontally */
+  align-items: center; /* Center align content vertically */
+  position: relative; /* Ensure correct positioning of iframe */
+}
+
+.video-container iframe {
+  width: 99%; /* Video covers 99% of the container width */
+  height: 99%; /* Video covers 99% of the container height */
+  border: none; /* Remove border */
+  border-radius: 15px; /* Rounded corners for the video */
+}
+
+.apply-now-container {
+  text-align: center; /* Center align the container */
+  margin-top: 20px; /* Margin at the top */
+  position: relative; /* Ensure correct positioning for child elements */
+}
+
+.apply-now-button {
+  display: inline-block; /* Ensure the button fits content */
+  background-color: #FFE43A; /* Default button color */
+  color: #000; /* Default text color */
+  padding: 20px 100px; /* Padding inside the button */
+  border-radius: 20px; /* Rounded corners */
+  text-transform: uppercase; /* Capitalize text */
+  font-size: 24px; /* Font size */
+  font-family: Tahoma, sans-serif; /* Font family */
+  font-weight: 400; /* Font weight */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Drop shadow */
+}
+
+.apply-now-button:hover {
+  background-color: #000; /* Button color on hover */
+  color: #FFF; /* Text color on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+  animation: jello 0.5s; /* Jello animation */
+}
+
+.capacity-note {
+  display: block; /* Ensure the text is displayed as a block element */
+  font-size: 17px; /* Font size */
+  font-style: italic; /* Italicize the text */
+  color: rgba(0, 0, 0, 0.45); /* Text color */
+  margin-top: 10px; /* Margin at the top */
+}
+
+.full-width-section {
+  width: 100%; /* Full width of the viewport */
+  height: 500px; /* Fixed height */
+  position: relative; /* Ensure positioning context for pseudo-elements */
+  z-index: 1; /* Ensure it is above other content */
+  overflow: hidden; /* Hide overflow of the pseudo-element */
+}
+
+.full-width-section::before {
+  content: ''; /* Empty content for the pseudo-element */
+  position: absolute; /* Absolute positioning within .full-width-section */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, 
+    #FDF6F2 50%, /* Top left color, matching the webpage background */
+    #000 50% /* Bottom right color, black */
+  );
+  z-index: -1; /* Place behind the content of .full-width-section */
+}
+
+.full-width-section img {
+  position: absolute; /* Absolute positioning within the section */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+  height: auto; /* Maintain original height */
+  width: auto; /* Maintain original width */
+  max-height: 100%; /* Ensure it fits within the height of the section */
+  max-width: 100%; /* Ensure it fits within the width of the section */
+}
+
+.full-width-section:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Darken background on hover */
+}
+
+.white-section {
+  width: 100%; /* Full width */
+  background-color: #FFFFFF; /* White background color */
+  padding: 40px; /* Padding inside the section */
+  text-align: center; /* Center align the content */
+}
+
+.white-section .strategic-plan-heading {
+  font-size: 38px; /* Heading size */
+  color: #000; /* Heading color */
+  font-family: Tahoma, sans-serif; /* Font family */
+  font-weight: 400; /* Font weight */
+  margin: 20px 0; /* Margin: top and bottom 20px */
+}
