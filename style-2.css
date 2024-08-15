@@ -69,12 +69,3 @@ header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker drop shadow on hover */
   animation: jello 0.5s; /* Apply the jello animation */
 }
-
-/* Keyframes for the jello animation */
-@keyframes jello {
-  0% { transform: scale(1); }
-  25% { transform: scale(1.1) skewX(-10deg); }
-  50% { transform: scale(1) skewX(5deg); }
-  75% { transform: scale(1.1) skewX(-5deg); }
-  100% { transform: scale(1); }
-}
